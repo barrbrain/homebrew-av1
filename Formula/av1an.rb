@@ -27,8 +27,9 @@ class Av1an < Formula
   end
 
   test do
+    vmaf_path = HOMEBREW_PREFIX/"share/vmaf-data/model/vmaf_v0.6.1neg.json"
     args = %W[
-      --vmaf-path=#{HOMEBREW_PREFIX}/share/vmaf-data/model/vmaf_v0.6.1neg.json
+      --vmaf-path=#{vmaf_path}
       --encoder rav1e
       --target-quality 90
       -i bus_qcif_7.5fps.y4m
