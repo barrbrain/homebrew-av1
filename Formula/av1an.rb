@@ -13,8 +13,9 @@ class Av1an < Formula
 
   bottle do
     root_url "https://github.com/barrbrain/homebrew-av1/releases/download/av1an-0.2.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "8d320638077271772c2fbae35a712a92a84b44729bc47a9d1b9450b89d406df4"
+    rebuild 2
+    sha256 cellar: :any,                 big_sur:      "f3ab6466fde91e7e4af171a691cbfbf5e8661648bae909be52fcb35a7de199b8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a2fc3283d1cd67fc40fd9fd1a14bf8702e47801c06137a8e03db1144a98f869c"
   end
 
   depends_on "nasm" => :build
