@@ -14,6 +14,12 @@ class FfmpegLibvmaf < Formula
     regex(/href=.*?ffmpeg[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/barrbrain/homebrew-av1/releases/download/ffmpeg-libvmaf-4.4.1_2"
+    sha256 big_sur:      "b5cda280c1cd97c0899fab11630e34c159d4d78015f8e72aa7956a904e5e4bd0"
+    sha256 x86_64_linux: "6891f1407f3158adfe6d6029d402e8eb825efaa95017d96a382811aa3a9cd715"
+  end
+
   depends_on "nasm" => :build
   depends_on "pkg-config" => :build
   depends_on "aom"
