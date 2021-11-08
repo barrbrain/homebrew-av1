@@ -20,9 +20,8 @@ class Av1an < Formula
 
   depends_on "nasm" => :build
   depends_on "rust" => :build
-  depends_on "ffmpeg-libvmaf"
+  depends_on "ffmpeg"
   depends_on "vapoursynth"
-  depends_on "vmaf-data"
 
   resource "bus_qcif_7.5fps.y4m" do
     url "https://media.xiph.org/video/derf/y4m/bus_qcif_7.5fps.y4m"
@@ -34,9 +33,7 @@ class Av1an < Formula
   end
 
   test do
-    vmaf_path = HOMEBREW_PREFIX/"share/vmaf-data/model/vmaf_v0.6.1neg.json"
-    args = %W[
-      --vmaf-path=#{vmaf_path}
+    args = %w[
       --target-quality 90
       -i bus_qcif_7.5fps.y4m
       -o bus_qcif_7.5fps.mp4
