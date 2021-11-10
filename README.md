@@ -1,11 +1,7 @@
-# Barrbrain Av1
+# barrbrain's AV1 tap for [Homebrew](https://brew.sh)
 
 ## How do I install these formulae?
 
-`brew install barrbrain/av1/<formula>`
+`brew install barrbrain/av1/av1an`
 
 Or `brew tap barrbrain/av1` and then `brew install <formula>`.
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
